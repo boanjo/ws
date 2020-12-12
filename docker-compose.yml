@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+  oxelgatan7-mqtt-ws:
+    build:
+      context: ./mqtt_app
+      dockerfile: Dockerfile
+    environment:
+      TZ: Europe/Stockholm
+    volumes:
+      - './cfg/oxelgatan7:/cfg'
+      
+  oxelgatan7-web-ws:
+    build:
+      context: ./web_app
+      dockerfile: Dockerfile
+    environment:
+      TZ: Europe/Stockholm
+    volumes:
+      - './cfg/oxelgatan7:/cfg'
+    ports:
+      - "xxxx:5000"
+
+  huarod-mqtt-ws:
+    build:
+      context: ./mqtt_app
+      dockerfile: Dockerfile
+    environment:
+      TZ: Europe/Stockholm
+    volumes:
+      - './cfg/huarod:/cfg'
+
+  huarod-web-ws:
+    build:
+      context: ./web_app
+      dockerfile: Dockerfile
+    environment:
+      TZ: Europe/Stockholm
+    volumes:
+      - './cfg/huarod:/cfg'
+    ports:
+      - "xxxx:5000"
+      
+        

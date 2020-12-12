@@ -1,0 +1,47 @@
+{
+    "temp_out": {
+	"header":"",
+	"node_id":"22",
+	"child_id":"2",
+	"value":"-255.0",
+	"last_seen":""
+    },
+    "temp_in":{
+	"node_id":"41",
+	"child_id":"1",
+	"value":"-255.0",
+	"last_seen":""
+    },
+    "rain": {
+	"node_id":"22",
+	"child_id":"1",
+	"value":"0.0",
+	"last_seen":""
+    },
+    "wind": {
+	"node_id":"22",
+	"child_id":"0",
+	"value":"0.0",
+	"last_seen":""
+    },
+    "mysql": {
+	"host":"some.example.org",
+	"port":1234,
+	"user":"some MySql User",
+	"password":"MySqlPasswordThisIsFake",
+	"database":"homeautomation",
+	"table":"huarod_ws",
+	"timezone":"Europe/Stockholm"
+    },
+    "mqtt": {
+	"url":"some.example.org",
+	"port":1883,
+	"mys_topics": ["hua/mysgw-in/433", "hua/mysgw-out/433"],
+	"websockets_port":9001,
+	"ws_topic": "ws/huarod"
+    },
+    "general": {
+	"title": "Huaröd",
+	"forecast_url":"http://forecast.io/embed/#&lat=55.80517&lon=13.92419&name=Huarod&lang=sv&units=si&color=#00aaff"
+    }
+}
