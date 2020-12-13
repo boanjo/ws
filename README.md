@@ -1,10 +1,11 @@
 # ws - Weather Station
 ![0](https://github.com/boanjo/boanjo.github.io/blob/master/ws_screen.jpg?raw=true "Pic 0")
 
-WS is a graphical frontend to be used on top of existing homeautomation (or it can be used standalone) like Domoticz or HomeAssistant and your own sensor network with MySensors. It is NOT a homeautomation controller but simply a listener on weather related sensors. To enable this listener pattern you need to have your MySensors hooked up via MQTT which is a popular way of disconnecting sensor networks and controller. It has a hardcoded web interface (even if it is of course possible for you to change) and the reason for this is that it has been satisfactory for a number of deployments over a number of years. What is a nice looking GUI is of course in the eyes of the beholder but for some reason i still think this is the best GUI for me with clear information without distracting details. It is also possile to read from a larger distance which i also consider important. The ws page runs on any server locally (including raspberry pi) or remote and to be displayed continously on a 10" tablet. I have 3 of these systems that have been up for more than 5 years. You can use an app like the "Fully Kiosk Browser" on android. I have made my own simple app that switches webviews after fully loaded periodically every 30 sec which makes a seemless and very smooth UI experience. It also handles loss of wifi and other quirks that might happen. If there is an interest in the APP let me know and i can fix that!  
+WS is a graphical frontend to be used on top of existing homeautomation (or it can be used standalone) like Domoticz or HomeAssistant and your own sensor network with MySensors. It is NOT a homeautomation controller but simply a listener on weather related sensors. To enable this listener pattern you need to have your MySensors hooked up via MQTT which is a popular way of disconnecting sensor networks and controller. It has a hardcoded web interface (even if it is of course possible for you to change) and the reason for this is that it has been satisfactory for a number of deployments over a number of years. What is a nice looking GUI is of course in the eyes of the beholder but for some reason i still think this is the best GUI for me with clear information without distracting details. It is also possile to read from a larger distance which i also consider important. The ws page runs on any server locally (including raspberry pi) or remote and to be displayed continously on a 10" tablet. I have a number of these systems that have been up for more than 5 years. You can use an app like the "Fully Kiosk Browser" on android. I have made my own simple app that switches webviews after fully loaded periodically every 30 sec which makes a seemless and very smooth UI experience. It also handles loss of wifi and other quirks that might happen. If there is an interest in the APP let me know and i can fix that!  
 
-![1](https://github.com/boanjo/boanjo.github.io/blob/master/ws_tablet.jpg?raw=true "Pic 1")
-
+<p align="center">
+  <img src="https://github.com/boanjo/boanjo.github.io/blob/master/ws_tablet.jpg?raw=true">
+</p>
 
 I have made a few architectural desicions: 
 - I only support MQTT gateway (for example how to build one https://github.com/boanjo/myhome/tree/master/gateway_mqtt) and that is to be able to listen on the gateway and controller and only act as an addon for both new and existing systems. I also have a few systems that run over mobile internet without possibility to do port forwarding (which from security perspective should be avoided too if possible) hence keeping the web interface off site makes life easier for me to manage the systems.
@@ -24,5 +25,11 @@ The MySensors network produces data continously (especially the wind (anemometer
 MySensors setup:
 I have connected a modified RainWise raingauge to this node with my own 3D printed Stevenson Screen for outdoor temperature. https://github.com/boanjo/myhome/blob/master/weather_station_dc/. On my roof i have the Davis instruments anemometer (i only use the HW and own MySensors radio) https://github.com/boanjo/myhome/tree/master/anemometer
 
-![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_screen.jpg?raw=true "Pic 3")
+
+![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_mysensor.jpg?raw=true "Pic 3")
+
+
+This is how i can look a few days before Christmas :)!
+
+![4](https://github.com/boanjo/boanjo.github.io/blob/master/ws_screen.jpg?raw=true "Pic 4")
 
