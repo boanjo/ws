@@ -42,16 +42,16 @@ https://github.com/boanjo/myhome/blob/master/weather_station_dc/
 ## Example setup #3:
 All sensors are their own nodes - see myhome for all sensors (with separate README.md descriptions) https://github.com/boanjo/myhome
 
-## Parts for WS project
-RainWise RainGauge ~100 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/rain_gauge/)
-RainWise Mounting ~15USD PLA/PETG and metal rods
-Davis Anemometer ~150 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/anemometer/)
-Stevenson Screen ~15 USD of PETG plastic, rods and electronics 
-Weather Station box ~10 USD PETG and electronics (https://github.com/boanjo/myhome/blob/master/weather_station_dc/)
-Indoor Temperature ~15 USD PLA and electronics (Si7021 temp + hum is ~7USD) (https://github.com/boanjo/myhome/tree/master/temp_indoor_dc)
-MQTT GW ~10 USD PLA and electronics (https://github.com/boanjo/myhome/blob/master/gateway_mqtt/)
+## Parts and rough BOM for this WS project
+- RainWise RainGauge ~100 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/rain_gauge/)
+- RainWise Mounting ~15USD PLA/PETG and metal rods
+- Davis Anemometer ~150 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/anemometer/)
+- Stevenson Screen ~15 USD of PETG plastic, rods and electronics 
+- Weather Station box ~10 USD PETG and electronics (https://github.com/boanjo/myhome/blob/master/weather_station_dc/)
+- Indoor Temperature ~15 USD PLA and electronics (Si7021 temp + hum is ~7USD) (https://github.com/boanjo/myhome/tree/master/temp_indoor_dc)
+- MQTT GW ~10 USD PLA and electronics (https://github.com/boanjo/myhome/blob/master/gateway_mqtt/)
 
-A total of around 320 USD and you will have a really reliable and nice weatherstation setup. I like being able to build things from "scratch" but I have chosen to use the Davis and RainWise for wind and rain as they are proven reliable and is well worth the investment. I've have tried numerous other solutions over the years and this is the best combo i have experienced. 
+A total of around 320 USD and you will have a really reliable and nice weatherstation setup. I like being able to build things from "scratch" but I have chosen to use the Davis and RainWise for wind and rain as they are proven reliable and is well worth the investment. I've have tried numerous other solutions over the years and this is the best quality vs cost (including continous troubleshooting of other poor HW) combo i have experienced. 
 
 
 ![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_mysensor.jpg?raw=true "Pic 3")
