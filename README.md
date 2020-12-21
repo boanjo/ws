@@ -44,9 +44,9 @@ All sensors are their own nodes - see myhome for all sensors (with separate READ
 
 ## Parts and rough BOM for this WS project
 - RainWise RainGauge ~100 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/rain_gauge/)
-- RainWise Mounting ~15USD PLA/PETG and metal rods
+- RainWise Mounting ~15USD PLA/PETG and metal rods (https://www.thingiverse.com/thing:4641372)
 - Davis Anemometer ~150 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/anemometer/)
-- Stevenson Screen ~15 USD of PETG plastic, rods and electronics 
+- Stevenson Screen ~15 USD of PETG plastic, rods and electronics (https://www.thingiverse.com/thing:4645989) 
 - Weather Station box ~10 USD PETG and electronics (https://github.com/boanjo/myhome/blob/master/weather_station_dc/)
 - Indoor Temperature ~15 USD PLA and electronics (Si7021 temp + hum is ~7USD) (https://github.com/boanjo/myhome/tree/master/temp_indoor_dc)
 - MQTT GW ~10 USD PLA and electronics (https://github.com/boanjo/myhome/blob/master/gateway_mqtt/)
