@@ -21,14 +21,44 @@ The MySensors network produces data continously (especially the wind (anemometer
 6. On every page load the values are fetched from the database. Outdoor Temp, Indoor Temp, Rain (by fetching min max to diff) plus wind speed and direction. Also the last weeks min max values for temp outdoor and rain is fetched to be shown in the chart. As mentioned in 5 changes appear instantly and in case of rain it will also trigger a new fetch from the database. The Flask web app renders the web UI that is displayed on the tablet, phone or browser. As i mentioned above i use my own android app for full control but a app like the Full Kiosk Browser should do the trick too.
 ![2](https://github.com/boanjo/boanjo.github.io/blob/master/ws_overview.jpg?raw=true "Pic 2")
 
-MySensors setup:
-I have connected a modified RainWise raingauge to this node with my own 3D printed Stevenson Screen for outdoor temperature. https://github.com/boanjo/myhome/blob/master/weather_station_dc/. On my roof i have the Davis instruments anemometer (i only use the HW and own MySensors radio) https://github.com/boanjo/myhome/tree/master/anemometer
+## Example setup #1 (my personal setup):
+I have connected a modified RainWise raingauge to this node with my own 3D printed Stevenson Screen for outdoor temperature. https://github.com/boanjo/myhome/blob/master/weather_station_dc/. The biggest reason i have the sensor dc powered is the outdoor temperature which also has a small DC fan connected to it to ensure ventilation of the Stevenson Cage also on really sunny days (it's extra precausion but it dont' really know if it is needed)
+
+Rain - If you want to pole mount the RainWise raingauge see here for a model you can print (or if you want to have it as a separate sensor node) https://github.com/boanjo/myhome/tree/master/rain_gauge
+Out Temp - Here is the printable https://www.thingiverse.com/thing:4645989 and also a YouTube video of the making. 
+
+Here is a fusion 360 rendering of the setup (no it's not my garden view ;)
+![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_assembly.jpg?raw=true "Pic 3")
+
+
+Wind - On my roof i have the Davis instruments anemometer (i only use the HW and own MySensors radio) https://github.com/boanjo/myhome/tree/master/anemometer. It's solar powered and i'd say it's a must for an anemometer.
+
+Indoor temperature - https://github.com/boanjo/myhome/tree/master/temp_indoor_dc (or the battery powered version https://github.com/boanjo/myhome/tree/master/temp_indoor) which is my favorite case for indoor sensors. Previously i've always found it difficult to make beautiful 433MHz sensors due to the antennas - but this i like :)
+
+## Example setup #2:
+All Sensors (Rain, Wind, Temperature) hooked up to the same weather_stataion:
+https://github.com/boanjo/myhome/blob/master/weather_station_dc/
+
+## Example setup #3:
+All sensors are their own nodes - see myhome for all sensors (with separate README.md descriptions) https://github.com/boanjo/myhome
+
+## Parts for WS project
+RainWise RainGauge ~100 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/rain_gauge/)
+RainWise Mounting ~15USD PLA/PETG and metal rods
+Davis Anemometer ~150 USD here in Europe (cheaper in the US) (https://github.com/boanjo/myhome/blob/master/anemometer/)
+Stevenson Screen ~15 USD of PETG plastic, rods and electronics 
+Weather Station box ~10 USD PETG and electronics (https://github.com/boanjo/myhome/blob/master/weather_station_dc/)
+Indoor Temperature ~15 USD PLA and electronics (Si7021 temp + hum is ~7USD) (https://github.com/boanjo/myhome/tree/master/temp_indoor_dc)
+MQTT GW ~10 USD PLA and electronics (https://github.com/boanjo/myhome/blob/master/gateway_mqtt/)
+
+A total of around 320 USD and you will have a really reliable and nice weatherstation setup. I like being able to build things from "scratch" but I have chosen to use the Davis and RainWise for wind and rain as they are proven reliable and is well worth the investment. I've have tried numerous other solutions over the years and this is the best combo i have experienced. 
 
 
 ![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_mysensor.jpg?raw=true "Pic 3")
 
+Then of course you need a RPI or other server HW for the actual WS applications and also a cheap tablet (But nice and clear display) for showing the results in realtime.
 
-This is how i can look a few days before Christmas :)!
+This is how i can look a few days before Christmas :) in the south of Sweden - a few degrees and rain!
 
 ![4](https://github.com/boanjo/boanjo.github.io/blob/master/ws_tablet.jpg?raw=true "Pic 4")
 
