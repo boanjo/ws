@@ -28,7 +28,7 @@ Rain - If you want to pole mount the RainWise raingauge see here for a model you
 Out Temp - Here is the printable https://www.thingiverse.com/thing:4645989 and also a YouTube video of the making. 
 
 Here is a fusion 360 rendering of the setup (no it's not my garden view ;)
-![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_assembly.jpg?raw=true "Pic 3")
+![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_assembly.png?raw=true "Pic 3")
 
 
 Wind - On my roof i have the Davis instruments anemometer (i only use the HW and own MySensors radio) https://github.com/boanjo/myhome/tree/master/anemometer. It's solar powered and i'd say it's a must for an anemometer.
@@ -54,11 +54,11 @@ All sensors are their own nodes - see myhome for all sensors (with separate READ
 A total of around 320 USD and you will have a really reliable and nice weatherstation setup. I like being able to build things from "scratch" but I have chosen to use the Davis and RainWise for wind and rain as they are proven reliable and is well worth the investment. I've have tried numerous other solutions over the years and this is the best quality vs cost (including continous troubleshooting of other poor HW) combo i have experienced. 
 
 
-![3](https://github.com/boanjo/boanjo.github.io/blob/master/ws_mysensor.jpg?raw=true "Pic 3")
+![4](https://github.com/boanjo/boanjo.github.io/blob/master/ws_mysensor.jpg?raw=true "Pic 4")
 
 Then of course you need a RPI or other server HW for the actual WS applications and also a cheap tablet (But nice and clear display) for showing the results in realtime.
 
 This is how i can look a few days before Christmas :) in the south of Sweden - a few degrees and rain!
 
-![4](https://github.com/boanjo/boanjo.github.io/blob/master/ws_tablet.jpg?raw=true "Pic 4")
+![5](https://github.com/boanjo/boanjo.github.io/blob/master/ws_tablet.jpg?raw=true "Pic 5")
 
